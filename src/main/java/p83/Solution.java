@@ -8,21 +8,10 @@ import org.junit.Test;
 
 /**
  * Given a sorted linked list, delete all duplicates such that each element appear only once.
-
- For example,
- Given 1->1->2, return 1->2.
- Given 1->1->2->3->3, return 1->2->3.
+ * 
+ * For example, Given 1->1->2, return 1->2. Given 1->1->2->3->3, return 1->2->3.
  */
 public class Solution {
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
-
     public ListNode deleteDuplicates(ListNode head) {
         ListNode current = head;
         ListNode prev = null;
@@ -65,5 +54,14 @@ public class Solution {
         assertThat(deleteDupList.val, is(3));
 
         assertThat(deleteDupList.next, nullValue());
+    }
+
+    public static class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode(int x) {
+            val = x;
+        }
     }
 }

@@ -11,15 +11,6 @@ import org.junit.Test;
  */
 public class Solution {
 
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-        }
-    }
-
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode head = null;
         ListNode current = null;
@@ -34,7 +25,7 @@ public class Solution {
                 l2 = l2.next;
             }
 
-            if(prev != null) {
+            if (prev != null) {
                 prev.next = current;
             }
             prev = current;
@@ -53,7 +44,7 @@ public class Solution {
             current = l2;
         }
 
-        if(prev != null) {
+        if (prev != null) {
             prev.next = current;
         }
 
@@ -97,5 +88,14 @@ public class Solution {
         mergedList = mergedList.next;
         assertThat(mergedList.val, is(6));
 
+    }
+
+    public static class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode(int x) {
+            val = x;
+        }
     }
 }

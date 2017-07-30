@@ -28,7 +28,7 @@ public class Solution {
                 builder.append(sum);
                 flag = 0;
             } else {
-                builder.append(sum-2);
+                builder.append(sum - 2);
                 flag = 1;
             }
         }
@@ -40,7 +40,7 @@ public class Solution {
                 builder.append(sum);
                 flag = 0;
             } else {
-                builder.append(sum-2);
+                builder.append(sum - 2);
                 flag = 1;
             }
         }
@@ -52,7 +52,7 @@ public class Solution {
                 builder.append(sum);
                 flag = 0;
             } else {
-                builder.append(sum-2);
+                builder.append(sum - 2);
                 flag = 1;
             }
         }
