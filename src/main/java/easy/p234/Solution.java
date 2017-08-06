@@ -20,6 +20,25 @@ public class Solution {
     }
 
     public boolean isPalindrome(ListNode head) {
+        if(head == null || head.next == null) {
+            return true;
+        }
+
+        ListNode oneSpeed = head;
+        ListNode twoSpeed = head.next.next;
+
+        while(oneSpeed != null && twoSpeed != null && twoSpeed.next != null){
+            oneSpeed = oneSpeed.next;
+            twoSpeed = twoSpeed.next.next;
+        }
+
+        if(twoSpeed == null) {
+            // odd
+        }else {
+            // even
+        }
+
+        
 
         return false;
     }
